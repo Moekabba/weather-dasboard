@@ -32,14 +32,6 @@ The following image demonstrates the application functionality:
 
 ![weather dashboard demo](./Assets/06-server-side-apis-homework-demo.png)
 
-## Review
-
-You are required to submit the following for review:
-
-- The URL of the deployed application.
-
-- The URL of the GitHub repository. Give the repository a unique name and include a high-quality README describing the project.
-
 ---
 
 published at https://moekabba.github.io/weather-dasboard/

@@ -1,30 +1,35 @@
 {
-  "coord": { "lon": -94.04, "lat": 33.44 },
+  "coord": { "lon": -0.1257, "lat": 51.5085 },
   "weather": [
-    { "id": 800, "main": "Clear", "description": "clear sky", "icon": "01n" }
+    {
+      "id": 804,
+      "main": "Clouds",
+      "description": "overcast clouds",
+      "icon": "04d"
+    }
   ],
   "base": "stations",
   "main": {
-    "temp": 294.26,
-    "feels_like": 293.63,
-    "temp_min": 294.26,
-    "temp_max": 294.26,
-    "pressure": 1010,
-    "humidity": 46
+    "temp": 10.99,
+    "feels_like": 10.49,
+    "temp_min": 9.16,
+    "temp_max": 12.78,
+    "pressure": 1011,
+    "humidity": 90
   },
   "visibility": 10000,
-  "wind": { "speed": 0.89, "deg": 123, "gust": 3.13 },
-  "clouds": { "all": 9 },
-  "dt": 1649033669,
+  "wind": { "speed": 6.17, "deg": 250 },
+  "clouds": { "all": 100 },
+  "dt": 1649074578,
   "sys": {
     "type": 2,
-    "id": 62880,
-    "country": "US",
-    "sunrise": 1648987255,
-    "sunset": 1649032651
+    "id": 2019646,
+    "country": "GB",
+    "sunrise": 1649050153,
+    "sunset": 1649097448
   },
-  "timezone": -18000,
-  "id": 4133367,
-  "name": "Texarkana",
+  "timezone": 3600,
+  "id": 2643743,
+  "name": "London",
   "cod": 200
 }
