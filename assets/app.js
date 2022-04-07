@@ -170,4 +170,4 @@ formEl.addEventListener("submit", formSubmitHandler);
 
 // todo ===>
 // set save input value with local Storage and render them.
-// make api url my dynamic
+// make api url  dynamic
