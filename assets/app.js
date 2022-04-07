@@ -1,9 +1,8 @@
 // my Api key to be use
 var myApiKey = "ecdc2e3e10911d9dd68cf81fb00dced1";
 var lat = 51.5073219;
-var lot = -0.1276474;
-// api with uv but can't accept q as location
-// https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude&exclude=hourly,minutely,alerts&appid=ecdc2e3e10911d9dd68cf81fb00dced1
+var lon = -0.1276474;
+
 // Dom Elements
 var searchButton = document.getElementById("search-btn");
 var formEl = document.getElementById("form");
@@ -17,20 +16,24 @@ var humidEl = document.getElementById("humidity");
 var windEl = document.getElementById("wind");
 var uviEl = document.getElementById("UV");
 var timeEl = document.getElementById("time");
-// current day usiing moment.js (find a way to connect with search input so you can see different cities time)
+// current day usiing moment.js
 var today = moment();
 $("#currentDay").text(today);
-// -------
+// ------- get api fucntion to fetch in
 function getApi(name) {
   // searchHistory.innerHTML = " ";
   // console.log("HELLO");
   var requestUrl =
-    " https://api.openweathermap.org/data/2.5/onecall?lat=51.5073219&lon=-0.1276474&units=metric&exclude=minutely,hourly&appid=ecdc2e3e10911d9dd68cf81fb00dced1";
+    " https://api.openweathermap.org/data/2.5/onecall?lat=" +
+    lat +
+    "&lon=" +
+    lon +
+    "&units=metric&exclude=minutely,hourly&appid=ecdc2e3e10911d9dd68cf81fb00dced1";
 
   // "https://api.openweathermap.org/data/2.5/weather?q=" +
   // name +
   // "&units=metric&appid=ecdc2e3e10911d9dd68cf81fb00dced1";
-
+  // calling url
   fetch(requestUrl)
     .then(function (response) {
       console.log(response);
@@ -164,3 +167,7 @@ var formSubmitHandler = function (event) {
 };
 
 formEl.addEventListener("submit", formSubmitHandler);
+
+// todo ===>
+// set save input value with local Storage and render them.
+// make api url my dynamic
