@@ -24,7 +24,7 @@ body {
 } */
 
 .container {
-  background: #68bbe3;
+  background: #e5f4fa;
   padding: 0.7rem;
   border-radius: 14px;
 
@@ -60,4 +60,14 @@ input.search-bar {
   border-radius: 24px;
   font-family: inherit;
   font-size: 120%;
+}
+
+.uvHigh {
+  background-color: rgb(225, 14, 14);
+}
+.uvLow {
+  background-color: green;
+}
+.uvM {
+  background-color: yellow;
 }
